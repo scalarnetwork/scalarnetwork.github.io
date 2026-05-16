@@ -15,7 +15,7 @@ const SCALAR_STATS = {
 
   // Development log entries (most recent first, max 3 shown)
   // OWNER: Update as milestones are genuinely reached.
-  devLog: [
+devLog: [
     {
       date: 'MAY 2026',
       title: 'Wallet Earnings Flow — Complete',
@@ -29,12 +29,12 @@ const SCALAR_STATS = {
     {
       date: 'MAY 2026',
       title: 'Supply Bound — Verified in Implementation',
-      body: 'The 21,000,000 coins ceiling is enforced inside the protocol circuit — not by a configuration parameter or an administrative setting. The constraint has been verified in the local implementation. It cannot be overridden by any party, including the developer.'
+      body: 'The 21,000,000 coins ceiling is enforced inside the protocol itself — not by a configuration parameter or an administrative setting. The constraint has been verified in the local implementation. It cannot be overridden by any party, including the developer.'
     },
     {
       date: 'MAY 2026',
       title: 'Performance Benchmark — Mandatory Ceiling Cleared',
-      body: 'Validity proof generation for a complete private transfer meets the mandatory performance ceiling on minimum-spec hardware. This benchmark is a hard gate — no future protocol change ships if it cannot clear this threshold.'
+      body: 'Processing a complete private transfer meets the mandatory performance ceiling on minimum-spec hardware. This benchmark is a hard gate — no future protocol change ships if it cannot clear this threshold.'
     },
     {
       date: 'MAY 2026',
