@@ -1429,3 +1429,6 @@ footer {
   .donation-qr img { width: 140px; height: 140px; }
   .donation-grid--single { max-width: 100%; }
 }
+.donation-grid--single {
+  max-width: 100%;
+}
