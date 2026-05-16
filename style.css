@@ -1325,3 +1325,55 @@ footer {
     padding: 24px 20px;
   }
 }
+
+/* ─── ROADMAP: JOURNEY ADDITIONS ─── */
+.roadmap-part-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-teal);
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.phase-change {
+  margin-top: 14px;
+  padding: 10px 14px;
+  background: rgba(240,165,0,0.05);
+  border-left: 2px solid rgba(240,165,0,0.3);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+.phase-change-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-amber);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.phase-code {
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: rgba(0,136,255,0.04);
+  border-left: 2px solid rgba(0,136,255,0.25);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+.phase-code-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-blue);
+  display: block;
+  margin-bottom: 4px;
+}
