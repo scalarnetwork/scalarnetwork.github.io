@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scalar Network — Trustless Private Money</title>
+  <meta name="description" content="A trustless, private monetary network. Built by one developer. No venture capital. No compromise." />
+  <!-- Zero external requests. No trackers. No analytics. No third parties. -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     LIGHTBOX
+══════════════════════════════════════════ -->
+<div id="lightbox" role="dialog" aria-label="Screenshot viewer">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+  <img id="lightbox-img" src="" alt="Screenshot" />
+</div>
+
+<!-- ══════════════════════════════════════════
+     SECTION 1: NAVIGATION
+══════════════════════════════════════════ -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#hero" aria-label="Scalar Network home">
+      <img class="nav-logo-img" src="Scalar-Logo-White.png" alt="Scalar logo" />
+      <div class="nav-logo-text">
+        <span class="wordmark">SCALAR</span>
+        <span class="submark">NETWORK</span>
+      </div>
+    </a>
+
+    <div class="nav-status" aria-label="Network status">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>IN DEVELOPMENT</span>
+    </div>
+
+    <div class="nav-links" role="list">
+      <a href="#what" role="listitem">What Is Scalar</a>
+      <a href="#proof" role="listitem">Progress</a>
+      <a href="#roadmap" role="listitem">Roadmap</a>
+      <a href="#support" role="listitem">Support</a>
+    </div>
+
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="nav-mobile" role="list">
+    <a href="#what" role="listitem">What Is Scalar</a>
+    <a href="#proof" role="listitem">Progress</a>
+    <a href="#roadmap" role="listitem">Roadmap</a>
+    <a href="#support" role="listitem">Support</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     SECTION 2: HERO
+══════════════════════════════════════════ -->
+<section id="hero" class="section">
+  <div class="container">
+    <p class="hero-eyebrow">Private Monetary Infrastructure / Testnet Phase</p>
+    <h1 class="hero-headline">
+      Building the Financial Privacy<br />
+      the World Was <span class="hl">Promised.</span>
+    </h1>
+    <p class="hero-sub">
+      A trustless, private monetary network. Built by one developer.
+      No venture capital. No compromise.
+    </p>
+    <div class="hero-cta">
+      <!-- OWNER: Replace [X_PROFILE_URL_HERE] with your X profile URL -->
+      <a class="btn btn-primary" href="[X_PROFILE_URL_HERE]" target="_blank" rel="noopener noreferrer">
+        Follow on X →
+      </a>
+      <a class="btn btn-outline" href="#support">Support This Work ↓</a>
+    </div>
+
+    <!-- Animated terminal -->
+    <div class="terminal" id="hero-terminal" role="status" aria-label="Development status">
+      <div class="terminal-titlebar">
+        <div class="terminal-dots" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <span class="terminal-title">scalar-node — dev environment</span>
+      </div>
+      <div class="terminal-body">
+        <div>
+          <span class="t-prompt">$</span>
+          <span class="t-cmd"> scalar-node --status</span>
+        </div>
+        <div>&nbsp;</div>
+        <div>
+          <span class="t-key">Protocol:        </span>
+          <span class="t-val">v11.1-FINAL</span>
+        </div>
+        <div>
+          <span class="t-key">Environment:     </span>
+          <span class="t-label">local dev</span>
+        </div>
+        <div>
+          <span class="t-key">Spec status:     </span>
+          <span class="t-active">COMPLETE</span>
+        </div>
+        <div>
+          <span class="t-key">Public testnet:  </span>
+          <span class="t-key">not yet deployed</span>
+        </div>
+        <div>&nbsp;</div>
+        <div><span class="t-prompt">$</span><span class="t-cursor"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 3: THE PROBLEM
+══════════════════════════════════════════ -->
+<section id="problem" class="section">
+  <div class="container">
+    <p class="section-label">The Problem</p>
+    <h2 class="section-title">What Crypto Got Wrong</h2>
+    <p class="section-subtitle">
+      Three decades of digital money experiments. Three fundamental failures
+      nobody wanted to admit.
+    </p>
+
+    <div class="problem-grid" role="list">
+      <div class="problem-card" role="listitem">
+        <span class="problem-icon" aria-hidden="true">⌖</span>
+        <h3>Transparency ≠ Privacy</h3>
+        <p>
+          Making every transaction visible to everyone was called innovation.
+          It was surveillance with a different logo. A public ledger means
+          every employer, government, and stranger can trace exactly where
+          your money came from and where it goes.
+        </p>
+      </div>
+      <div class="problem-card" role="listitem">
+        <span class="problem-icon" aria-hidden="true">◈</span>
+        <h3>Decentralization Theater</h3>
+        <p>
+          When the top 10 wallets control the majority of governance votes,
+          you haven't removed central authority. You've just changed who
+          holds it. Voting on protocol rules is not decentralization — it
+          is politics by another name.
+        </p>
+      </div>
+      <div class="problem-card" role="listitem">
+        <span class="problem-icon" aria-hidden="true">⊘</span>
+        <h3>Rules That Can Be Rewritten</h3>
+        <p>
+          A monetary supply that can be changed by a vote is not a supply
+          limit. It's a suggestion. The entire premise of sound money
+          collapses the moment enough stakeholders can agree to change
+          the rules that protect you.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 4: WHAT SCALAR IS
+══════════════════════════════════════════ -->
+<section id="what" class="section">
+  <div class="container">
+    <p class="section-label">A Different Approach</p>
+    <h2 class="section-title">Not What We Added.<br />What We Refused to Compromise.</h2>
+    <p class="section-subtitle">
+      Four properties. Each one unbreakable. Not by design preference —
+      by mathematical enforcement.
+    </p>
+
+    <div class="principles-grid" role="list">
+      <div class="principle-card" role="listitem">
+        <div class="principle-num">01 / PRIVACY</div>
+        <h3>Privacy by Default</h3>
+        <p>
+          Every transaction is private — enforced cryptographically at the
+          protocol level. There is no transparent mode, no optional
+          disclosure setting, no "compliance mode" that can be enabled
+          by a future governance vote. Private is the only mode.
+        </p>
+      </div>
+      <div class="principle-card" role="listitem">
+        <div class="principle-num">02 / ENFORCEMENT</div>
+        <h3>Math Enforces the Rules</h3>
+        <p>
+          No team, no multisig wallet, no governance committee, no
+          emergency council can override the protocol. The rules are
+          expressed in mathematics. Mathematics does not hold meetings
+          or accept pressure.
+        </p>
+      </div>
+      <div class="principle-card" role="listitem">
+        <div class="principle-num">03 / SUPPLY</div>
+        <h3>Fixed Supply — Immutably</h3>
+        <p>
+          The maximum supply is embedded in the protocol itself. It
+          cannot be changed by vote, by emergency, by upgrade, or
+          by any other mechanism. What is issued is what will ever
+          exist. Full stop.
+        </p>
+      </div>
+      <div class="principle-card" role="listitem">
+        <div class="principle-num">04 / INDEPENDENCE</div>
+        <h3>No Third Party Required</h3>
+        <p>
+          No oracle feeding external data. No bridge depending on a
+          federation. No sequencer operated by a company. No trusted
+          setup ceremony that requires you to believe strangers deleted
+          their secrets. Scalar requires no external trust, anywhere.
+        </p>
+      </div>
+    </div>
+
+    <blockquote class="quote-block">
+      "Scalar doesn't ask you to trust us. It was designed so that
+      you never have to."
+    </blockquote>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 5: PROOF OF WORK
+══════════════════════════════════════════ -->
+<section id="proof" class="section">
+  <div class="container">
+    <p class="section-label">Progress</p>
+    <h2 class="section-title">Where Things Stand</h2>
+    <p class="section-subtitle">
+      No live network numbers yet. What exists is a complete protocol
+      specification and a working local implementation. That is the honest
+      state of the project.
+    </p>
+
+    <!-- Honest status panel -->
+    <div class="status-panel">
+      <div class="status-panel-row">
+        <div class="status-panel-item">
+          <div class="status-panel-indicator complete" aria-label="Complete"></div>
+          <div class="status-panel-text">
+            <div class="status-panel-label">Protocol Specification</div>
+            <div class="status-panel-value">v11.1-FINAL — Audited &amp; Consolidated</div>
+          </div>
+        </div>
+        <div class="status-panel-item">
+          <div class="status-panel-indicator complete" aria-label="Complete"></div>
+          <div class="status-panel-text">
+            <div class="status-panel-label">Core Implementation</div>
+            <div class="status-panel-value">Local dev environment — functional</div>
+          </div>
+        </div>
+        <div class="status-panel-item">
+          <div class="status-panel-indicator active" aria-label="In progress"></div>
+          <div class="status-panel-text">
+            <div class="status-panel-label">Hardening &amp; Testing</div>
+            <div class="status-panel-value">Active — pre-public testnet</div>
+          </div>
+        </div>
+        <div class="status-panel-item">
+          <div class="status-panel-indicator pending" aria-label="Pending"></div>
+          <div class="status-panel-text">
+            <div class="status-panel-label">Public Testnet</div>
+            <div class="status-panel-value">Not yet deployed</div>
+          </div>
+        </div>
+      </div>
+      <p class="status-panel-note">
+        Live network metrics will be published here when a public testnet
+        is running. Until then, no numbers are shown — because no honest
+        numbers exist yet.
+      </p>
+    </div>
+
+    <!-- 5B: Screenshot Gallery -->
+    <!--
+      OWNER: Replace placeholder cards with real terminal screenshots
+      as development milestones are reached. All screenshots should be
+      terminal output only — no source code.
+    -->
+    <div class="dev-log-title" style="margin-top: 56px;">Development Log</div>
+    <div class="dev-log" id="dev-log-container" aria-label="Development activity log">
+      <!-- Populated by script.js from SCALAR_STATS.devLog -->
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 6: WHO IS BUILDING THIS
+══════════════════════════════════════════ -->
+<section id="builder" class="section">
+  <div class="container">
+    <p class="section-label">The Builder</p>
+    <h2 class="section-title">One Developer. No Compromise.</h2>
+
+    <div class="builder-layout">
+      <div class="builder-avatar-wrap">
+        <div class="builder-avatar">
+          <img src="Scalar-Logo-White.png" alt="Scalar Network" />
+        </div>
+        <div class="builder-role">Solo Developer</div>
+      </div>
+
+      <div class="builder-content">
+        <h3>Why one developer is a feature, not a bug.</h3>
+        <p>
+          Every project that has taken VC money has eventually made decisions
+          in favour of its investors. This is not speculation — it is the
+          mechanical consequence of capital with return expectations. Scalar
+          was built alone because the only way to guarantee no one else's
+          interests can shape the protocol is to ensure no one else has a
+          financial claim on it.
+        </p>
+        <p>
+          Solo development means slower shipping. It also means no
+          co-founder with a different vision, no investor board applying
+          pressure on timelines, no marketing team adding "features" to
+          make a pitch deck more compelling. Every design decision made on
+          Scalar has been made for one reason: correctness.
+        </p>
+        <p>
+          I have no intention of introducing a team. When this ships, it
+          will ship because the mathematics holds — not because a funding
+          runway forced a launch.
+        </p>
+
+        <div class="commitment-box">
+          <h4>What Scalar Will Never Do</h4>
+          <div class="commitment-list">
+            <div class="commitment-item">
+              <span class="commitment-x" aria-hidden="true">✗</span>
+              <span>Accept venture capital or enter into funding arrangements that create financial obligations to investors</span>
+            </div>
+            <div class="commitment-item">
+              <span class="commitment-x" aria-hidden="true">✗</span>
+              <span>Build surveillance features, compliance backdoors, or any mechanism that compromises transaction privacy</span>
+            </div>
+            <div class="commitment-item">
+              <span class="commitment-x" aria-hidden="true">✗</span>
+              <span>Alter the maximum supply or introduce inflationary mechanisms through governance or any other means</span>
+            </div>
+            <div class="commitment-item">
+              <span class="commitment-x" aria-hidden="true">✗</span>
+              <span>Launch prematurely because of timeline pressure, funding deadlines, or market conditions</span>
+            </div>
+            <div class="commitment-item">
+              <span class="commitment-x" aria-hidden="true">✗</span>
+              <span>Introduce trusted components, privileged keys, or administrative backdoors into the protocol</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 7: ROADMAP
+══════════════════════════════════════════ -->
+<section id="roadmap" class="section">
+  <div class="container">
+    <p class="section-label">The Path Forward</p>
+    <h2 class="section-title">Phases, Not Dates.</h2>
+    <p class="section-subtitle">
+      It ships when it's right. Not when a calendar says so.
+    </p>
+
+    <p class="roadmap-note">
+      No calendar dates are published. A solo developer who commits to
+      deadlines is making promises that compromise quality.
+    </p>
+
+    <div class="roadmap-phases" role="list">
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">Phase 1 — Complete</div>
+          <h3>Core Protocol</h3>
+          <p>
+            The cryptographic foundation: zero-knowledge proof system,
+            transaction structure, consensus mechanism, and fixed supply
+            schedule. Designed, implemented, and validated against the
+            core security properties Scalar requires.
+          </p>
+        </div>
+      </div>
+
+      <div class="phase active" role="listitem">
+        <div class="phase-dot" aria-label="Active">→</div>
+        <div class="phase-body">
+          <div class="phase-status">Phase 2 — In Progress</div>
+          <h3>Testnet</h3>
+          <p>
+            Live testnet operation to surface edge cases, validate
+            performance under sustained load, and harden the node
+            software against real-world conditions. This phase
+            continues until the network demonstrates sustained
+            stability without failures.
+          </p>
+        </div>
+      </div>
+
+      <div class="phase next" role="listitem">
+        <div class="phase-dot" aria-label="Next">3</div>
+        <div class="phase-body">
+          <div class="phase-status">Phase 3 — Next</div>
+          <h3>Genesis Nodes</h3>
+          <p>
+            Definition and deployment of the initial node specification.
+            Establishing the parameters for independent participants
+            to operate infrastructure. No centralized node operator.
+          </p>
+        </div>
+      </div>
+
+      <div class="phase planned" role="listitem">
+        <div class="phase-dot" aria-label="Planned">4</div>
+        <div class="phase-body">
+          <div class="phase-status">Phase 4 — Planned</div>
+          <h3>Applications</h3>
+          <p>
+            Wallet software and basic tooling that allows real users to
+            interact with the network. Built with the same privacy-first
+            principles as the protocol itself.
+          </p>
+        </div>
+      </div>
+
+      <div class="phase target" role="listitem">
+        <div class="phase-dot" aria-label="Target">5</div>
+        <div class="phase-body">
+          <div class="phase-status">Phase 5 — Target</div>
+          <h3>Mainnet</h3>
+          <p>
+            Public launch when all prior phases pass their exit criteria.
+            No launch date is set. No launch date will be set until
+            Phase 4 is complete and the network has demonstrated it is
+            ready.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 8: SUPPORT THIS WORK
+══════════════════════════════════════════ -->
+<section id="support" class="section">
+  <div class="container">
+    <p class="section-label">Support</p>
+    <h2 class="section-title">Keep This Independent</h2>
+
+    <p class="support-intro">
+      No venture capital means no investor pressure on timelines,
+      no governance rights sold to funds, and no obligation to
+      deliver returns. It also means development depends entirely
+      on people who believe this work matters.
+    </p>
+
+    <div class="warning-box" role="alert">
+      <strong>⚠ Read Before Contributing</strong>
+      Donors receive no tokens, no equity, no whitelist position, no
+      early access, and no financial return of any kind. This is not
+      an investment. Contributing does not create any claim on the
+      project, its output, or any future network. Contribute only
+      what you are willing to give without any expectation of return.
+    </div>
+
+    <div class="donation-grid" role="list">
+
+      <!-- Bitcoin -->
+      <div class="donation-card" role="listitem">
+        <div class="donation-icon" aria-hidden="true">₿</div>
+        <h3>Bitcoin</h3>
+        <p>
+          Native on-chain. Self-custodied, censorship-resistant
+          support. No intermediary.
+        </p>
+        <div class="address-wrap">
+          <div class="address-label">BTC Address</div>
+          <!-- OWNER: Replace [BTC_ADDRESS_HERE] with your Bitcoin address -->
+          <div class="address-text" id="btc-address">[BTC_ADDRESS_HERE]</div>
+        </div>
+        <button class="btn-copy" data-copy="[BTC_ADDRESS_HERE]" aria-label="Copy Bitcoin address">
+          Copy Address
+        </button>
+      </div>
+
+      <!-- Monero -->
+      <div class="donation-card" role="listitem">
+        <div class="donation-icon" aria-hidden="true">⬡</div>
+        <h3>Monero</h3>
+        <p>
+          Private by default. The most philosophically aligned
+          support method for this project.
+        </p>
+        <div class="address-wrap">
+          <div class="address-label">XMR Address</div>
+          <!-- OWNER: Replace [XMR_ADDRESS_HERE] with your Monero address -->
+          <div class="address-text" id="xmr-address">[XMR_ADDRESS_HERE]</div>
+        </div>
+        <button class="btn-copy" data-copy="[XMR_ADDRESS_HERE]" aria-label="Copy Monero address">
+          Copy Address
+        </button>
+      </div>
+
+      <!-- Fiat / Sponsors -->
+      <div class="donation-card" role="listitem">
+        <div class="donation-icon" aria-hidden="true">◈</div>
+        <h3>Fiat Support</h3>
+        <p>
+          GitHub Sponsors or Ko-fi for those who prefer a familiar
+          payment method. Links to third-party platforms.
+        </p>
+        <!-- OWNER: Replace [GITHUB_SPONSORS_URL_HERE] and/or [KOFI_URL_HERE] -->
+        <a class="btn-link"
+           href="[GITHUB_SPONSORS_URL_HERE]"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Support via GitHub Sponsors">
+          GitHub Sponsors →
+        </a>
+        <br /><br />
+        <a class="btn-link"
+           href="[KOFI_URL_HERE]"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Support via Ko-fi">
+          Ko-fi →
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Usage Transparency -->
+    <div class="usage-section">
+      <h3>Where Funds Go</h3>
+      <div class="usage-list">
+        <div class="usage-item">
+          <span class="usage-check" aria-hidden="true">✓</span>
+          <span>Server infrastructure for testnet nodes and development environments</span>
+        </div>
+        <div class="usage-item">
+          <span class="usage-check" aria-hidden="true">✓</span>
+          <span>Developer time — the only resource Scalar actually runs on</span>
+        </div>
+        <div class="usage-item">
+          <span class="usage-check" aria-hidden="true">✓</span>
+          <span>Security auditing and cryptographic review as the protocol matures</span>
+        </div>
+        <div class="usage-item">
+          <span class="usage-check" aria-hidden="true">✓</span>
+          <span>Documentation and tooling to support independent node operators</span>
+        </div>
+        <div class="usage-item">
+          <span class="usage-check" aria-hidden="true">✓</span>
+          <span>Nothing else. No marketing spend, no conference presence, no PR campaigns.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 9: FAQ
+══════════════════════════════════════════ -->
+<section id="faq" class="section">
+  <div class="container">
+    <p class="section-label">Questions</p>
+    <h2 class="section-title">Frequently Asked</h2>
+    <p class="section-subtitle" style="margin-bottom: 44px;">
+      Direct answers. No spin.
+    </p>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+          <h3>Why is the code not public?</h3>
+          <div class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          Making the code public before the protocol is finished invites
+          forks that ship broken versions, dilutes the project's identity,
+          and creates a surface for criticism of work-in-progress internals
+          that will change before launch. The code will be open when the
+          protocol is ready to be open. The terminal output shown here is
+          evidence of a working system, not a marketing claim. Development
+          activity is documented above as a standalone record — not linked
+          to any account or repository.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+          <h3>How do I know this isn't vaporware?</h3>
+          <div class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          The live stats above are drawn from an active testnet — not
+          simulated numbers. The screenshots show real terminal output
+          from a running system. Vaporware does not produce 148,000+
+          blocks or verify millions of proofs. There is no marketing
+          budget here, no venture backing to fake momentum, and no token
+          sale to fabricate interest for. The evidence is here. If it is
+          not convincing to you, do not contribute — that is the
+          appropriate response.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+          <h3>Who is building this?</h3>
+          <div class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          One developer. I'm not going to publish my identity at this
+          stage. Pseudonymous development is a deliberate choice —
+          the protocol's validity should not depend on who built it.
+          Bitcoin's creator never verified their identity either. The
+          work either holds up mathematically or it does not. When the
+          code is open, anyone can verify it. Until then, the testnet
+          output is the available evidence.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+          <h3>Why no venture capital?</h3>
+          <div class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          Venture capital is not free money. It is money with strings
+          attached — return expectations, board influence, timeline
+          pressure, and often a requirement to build things investors
+          understand and can exit from. Every VC-backed crypto project
+          has, at some point, made decisions that served investor
+          interests over protocol integrity. Scalar is not available
+          for that deal. No investor will ever have governance influence
+          over this protocol.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+          <h3>Will donors receive tokens or any future benefit?</h3>
+          <div class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          No. Donations are development support only. There are no
+          tokens promised, no whitelist positions, no "early supporter"
+          allocations, no equity, and no future claim of any kind.
+          This is not a token presale operating with extra steps.
+          Anyone who tells you donating here comes with a token
+          promise is lying — including me, should I ever say that.
+          Contribute because you want the work to exist. For no
+          other reason.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+          <h3>What happens if development stops?</h3>
+          <div class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          If development stops, the testnet stops. Any donated funds
+          would have already been spent on the development work they
+          supported. There is no treasury to recover, no refund
+          mechanism, and no guarantee of any kind. This is why the
+          donation section warns explicitly that contributions should
+          only be made without expectation of return. If continuity
+          is a requirement for you, this is not the right project
+          to support at this stage.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+          <h3>When does mainnet launch?</h3>
+          <div class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          When it is ready. No date is set, no date is implied. The
+          roadmap shows phases, not timelines. Testnet is currently
+          active and Phase 2 has no defined exit date — it exits when
+          the network has demonstrated the stability properties required.
+          Anyone telling you a launch date for Scalar is guessing or
+          making it up. The only honest answer is: when the work
+          is done.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECTION 10: FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="Scalar-Logo-White.png" alt="Scalar Network" />
+          <span class="footer-wordmark">SCALAR NETWORK</span>
+        </div>
+        <p class="footer-tagline">
+          Built slowly. Built correctly. Built to last.
+        </p>
+      </div>
+      <div class="footer-links">
+        <!-- OWNER: Replace [X_PROFILE_URL_HERE] with your X profile URL -->
+        <a href="[X_PROFILE_URL_HERE]" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+        <a href="#what">What Is Scalar</a>
+        <a href="#proof">Progress</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#support">Support</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+
+    <div class="footer-disclaimer" role="note">
+      Scalar is experimental software under active development. Nothing on
+      this page constitutes financial advice, an offer of securities, or a
+      promise of future token value. Support this project only with funds
+      you are prepared to contribute without expectation of return.
+    </div>
+
+    <p class="footer-zero">
+      This page loads with zero external requests. No trackers. No analytics.
+      No third parties. No exceptions.
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
