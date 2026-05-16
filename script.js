@@ -17,19 +17,29 @@ const SCALAR_STATS = {
   // OWNER: Update as milestones are genuinely reached.
   devLog: [
     {
-      date: 'JUL 2026',
-      title: 'Specification Finalised — v11.1-FINAL',
-      body: 'The master protocol specification reached its final consolidated state. An independent cryptographic audit was conducted and all findings integrated: deterministic transaction ordering, formal dual-layer nullifier invariants, supply bound enforcement, and governance caps for high-tier nodes. The spec is now the single authoritative reference for all further implementation work.'
-    },
-    {
-      date: 'JUN 2026',
-      title: 'Proof Performance Benchmark — Target Cleared',
-      body: 'Local benchmark testing confirmed that validity proof generation for a multi-input private transfer completes within the mandatory performance ceiling on minimum-spec hardware. This ceiling is now a hard requirement — no future change to the protocol ships if it cannot clear this benchmark.'
+      date: 'MAY 2026',
+      title: 'Wallet Earnings Flow — Complete',
+      body: 'Network participation now produces a spendable wallet balance. A node that stays online accumulates coins over time — no mining hardware, no staking requirement. The earnings flow from participation to spendable balance is implemented and functional.'
     },
     {
       date: 'MAY 2026',
-      title: 'Supply Constraint — Verified in Local Environment',
-      body: 'The supply accounting mechanism was validated in a local development environment. The 21,000,000 SCL maximum is enforced inside the protocol circuit — not by a configuration parameter or an administrative decision. This constraint cannot be overridden by any external party, including the developer.'
+      title: 'Security Audit — 3 of 4 Findings Resolved',
+      body: 'Three protocol-level issues identified by the security audit have been closed at the implementation level. The fourth finding requires testnet simulation to reproduce under real network conditions and remains open pending public testnet deployment.'
+    },
+    {
+      date: 'MAY 2026',
+      title: 'Supply Bound — Verified in Implementation',
+      body: 'The 21,000,000 SCL ceiling is enforced inside the protocol circuit — not by a configuration parameter or an administrative setting. The constraint has been verified in the local implementation. It cannot be overridden by any party, including the developer.'
+    },
+    {
+      date: 'MAY 2026',
+      title: 'Performance Benchmark — Mandatory Ceiling Cleared',
+      body: 'Validity proof generation for a complete private transfer meets the mandatory performance ceiling on minimum-spec hardware. This benchmark is a hard gate — no future protocol change ships if it cannot clear this threshold.'
+    },
+    {
+      date: 'MAY 2026',
+      title: 'Specification Finalised — v11.1-FINAL',
+      body: 'The master protocol specification reached its final consolidated state following an independent cryptographic audit. It is now the single authoritative reference for all further implementation work. Version numbering is frozen.'
     }
   ]
 };
