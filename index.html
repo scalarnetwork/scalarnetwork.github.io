@@ -7,8 +7,6 @@
   <meta name="description" content="A trustless, private monetary network. Built by one developer. No venture capital. No compromise." />
   <!-- Zero external requests. No trackers. No analytics. No third parties. -->
   <link rel="stylesheet" href="style.css" />
-  <!-- OWNER: Replace LOGO_PLACEHOLDER with actual logo data URI or relative path -->
-  <!-- The logo is already embedded below via data URI from Scalar_Logo.jpeg -->
 </head>
 <body>
 
@@ -26,7 +24,6 @@
 <nav id="nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a class="nav-logo" href="#hero" aria-label="Scalar Network home">
-      <!-- OWNER: Logo embedded from Scalar_Logo.jpeg — replace src with path if needed -->
       <img class="nav-logo-img" src="Scalar-Logo-White.png" alt="Scalar logo" />
       <div class="nav-logo-text">
         <span class="wordmark">SCALAR</span>
@@ -234,15 +231,15 @@
     <p class="section-label">Proof of Work</p>
     <h2 class="section-title">Evidence, Not Claims</h2>
     <p class="section-subtitle">
-      Screenshots and live numbers from active testnet operation.
-      This is what the work looks like.
+      A working system produces output. These are numbers and terminal
+      screenshots from an active testnet — not a whitepaper.
     </p>
 
     <!-- 5A: Live Stats Bar -->
     <div class="stats-bar" id="stats-bar" role="status" aria-label="Live network statistics">
       <div class="stat-item">
         <div class="stat-value" id="stat-block-height">—</div>
-        <div class="stat-label">Block Height</div>
+        <div class="stat-label">Blocks Produced</div>
       </div>
       <div class="stat-item">
         <div class="stat-value" id="stat-proofs">—</div>
@@ -250,7 +247,7 @@
       </div>
       <div class="stat-item">
         <div class="stat-value" id="stat-tx">—</div>
-        <div class="stat-label">Testnet Txs</div>
+        <div class="stat-label">Private Transfers</div>
       </div>
       <div class="stat-item">
         <div class="stat-value" id="stat-uptime">—</div>
@@ -271,7 +268,7 @@
     -->
     <div class="screenshots-grid" aria-label="Development screenshots">
 
-      <div class="screenshot-card" data-src="" role="figure" aria-label="Node Active screenshot">
+      <div class="screenshot-card" data-src="" role="figure" aria-label="Node heartbeat output">
         <!-- OWNER: Set data-src and img src to your screenshot -->
         <div class="screenshot-img-wrap">
           <div class="screenshot-placeholder">
@@ -282,12 +279,12 @@
           </div>
         </div>
         <div class="screenshot-meta">
-          <h4>Node Active</h4>
-          <p class="t-key">testnet / node-01</p>
+          <h4>Node Heartbeat</h4>
+          <p class="t-key">testnet / uptime-monitor</p>
         </div>
       </div>
 
-      <div class="screenshot-card" data-src="" role="figure" aria-label="Proof Generation screenshot">
+      <div class="screenshot-card" data-src="" role="figure" aria-label="Validity proof generation output">
         <div class="screenshot-img-wrap">
           <div class="screenshot-placeholder">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -297,12 +294,12 @@
           </div>
         </div>
         <div class="screenshot-meta">
-          <h4>Proof Generation</h4>
-          <p class="t-key">zkp / generation-log</p>
+          <h4>Validity Proof Output</h4>
+          <p class="t-key">proof-system / generation-log</p>
         </div>
       </div>
 
-      <div class="screenshot-card" data-src="" role="figure" aria-label="Stress Test screenshot">
+      <div class="screenshot-card" data-src="" role="figure" aria-label="Load test output">
         <div class="screenshot-img-wrap">
           <div class="screenshot-placeholder">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -312,12 +309,12 @@
           </div>
         </div>
         <div class="screenshot-meta">
-          <h4>Stress Test</h4>
-          <p class="t-key">load / 10k-concurrent</p>
+          <h4>Sustained Load Test</h4>
+          <p class="t-key">stress / concurrent-proofs</p>
         </div>
       </div>
 
-      <div class="screenshot-card" data-src="" role="figure" aria-label="Block Log screenshot">
+      <div class="screenshot-card" data-src="" role="figure" aria-label="Supply accounting output">
         <div class="screenshot-img-wrap">
           <div class="screenshot-placeholder">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -327,8 +324,8 @@
           </div>
         </div>
         <div class="screenshot-meta">
-          <h4>Block Log</h4>
-          <p class="t-key">consensus / block-output</p>
+          <h4>Supply Accounting</h4>
+          <p class="t-key">emission / scarcity-proof-output</p>
         </div>
       </div>
 
@@ -355,7 +352,7 @@
         </div>
       </div>
 
-      <div class="screenshot-card" data-src="" role="figure" aria-label="Network Statistics screenshot">
+      <div class="screenshot-card" data-src="" role="figure" aria-label="Network health metrics output">
         <div class="screenshot-img-wrap">
           <div class="screenshot-placeholder">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -366,8 +363,8 @@
           </div>
         </div>
         <div class="screenshot-meta">
-          <h4>Network Statistics</h4>
-          <p class="t-key">metrics / live-output</p>
+          <h4>Network Health Metrics</h4>
+          <p class="t-key">node-score / distribution-output</p>
         </div>
       </div>
 
@@ -392,11 +389,6 @@
 
     <div class="builder-layout">
       <div class="builder-avatar-wrap">
-        <!--
-          OWNER: Replace the placeholder below with your logo or a neutral avatar.
-          Example: <img src="avatar.png" alt="Developer avatar" />
-          Or leave as the Scalar logo:
-        -->
         <div class="builder-avatar">
           <img src="Scalar-Logo-White.png" alt="Scalar Network" />
         </div>
