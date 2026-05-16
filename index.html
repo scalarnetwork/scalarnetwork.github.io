@@ -785,70 +785,54 @@
       what you are willing to give without any expectation of return.
     </div>
 
-    <div class="donation-grid" role="list">
+<!-- Monero only — the only philosophically aligned method for this project -->
+<div class="donation-grid donation-grid--single" role="list">
 
-      <!-- Bitcoin -->
-      <div class="donation-card" role="listitem">
-        <div class="donation-icon" aria-hidden="true">₿</div>
-        <h3>Bitcoin</h3>
-        <p>
-          Native on-chain. Self-custodied, censorship-resistant
-          support. No intermediary.
-        </p>
-        <div class="address-wrap">
-          <div class="address-label">BTC Address</div>
-          <!-- OWNER: Replace [BTC_ADDRESS_HERE] with your Bitcoin address -->
-          <div class="address-text" id="btc-address">[BTC_ADDRESS_HERE]</div>
-        </div>
-        <button class="btn-copy" data-copy="[BTC_ADDRESS_HERE]" aria-label="Copy Bitcoin address">
-          Copy Address
-        </button>
-      </div>
+  <div class="donation-card donation-card--featured" role="listitem">
+    <div class="donation-card-inner">
 
-      <!-- Monero -->
-      <div class="donation-card" role="listitem">
+      <!-- Left: info + address -->
+      <div class="donation-info">
         <div class="donation-icon" aria-hidden="true">⬡</div>
         <h3>Monero</h3>
         <p>
-          Private by default. The most philosophically aligned
-          support method for this project.
+          Private by default. Every transaction untraceable by design.
+          The most philosophically aligned way to support a project
+          built around financial privacy.
         </p>
         <div class="address-wrap">
           <div class="address-label">XMR Address</div>
-          <!-- OWNER: Replace [XMR_ADDRESS_HERE] with your Monero address -->
-          <div class="address-text" id="xmr-address">[XMR_ADDRESS_HERE]</div>
+          <div class="address-text" id="xmr-address">88D4pit5UchjU8kxALKdjzVDoMijX2PgPgRvtGsHTfCtKkKEEK4JUEabT825NWyRskTavvdHrwYpoBPHnae9MxGVHmDiyR8</div>
         </div>
-        <button class="btn-copy" data-copy="[XMR_ADDRESS_HERE]" aria-label="Copy Monero address">
+        <button class="btn-copy"
+          data-copy="88D4pit5UchjU8kxALKdjzVDoMijX2PgPgRvtGsHTfCtKkKEEK4JUEabT825NWyRskTavvdHrwYpoBPHnae9MxGVHmDiyR8"
+          aria-label="Copy Monero address">
           Copy Address
         </button>
       </div>
 
-      <!-- Fiat / Sponsors -->
-      <div class="donation-card" role="listitem">
-        <div class="donation-icon" aria-hidden="true">◈</div>
-        <h3>Fiat Support</h3>
-        <p>
-          GitHub Sponsors or Ko-fi for those who prefer a familiar
-          payment method. Links to third-party platforms.
-        </p>
-        <!-- OWNER: Replace [GITHUB_SPONSORS_URL_HERE] and/or [KOFI_URL_HERE] -->
-        <a class="btn-link"
-           href="[GITHUB_SPONSORS_URL_HERE]"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Support via GitHub Sponsors">
-          GitHub Sponsors →
-        </a>
-        <br /><br />
-        <a class="btn-link"
-           href="[KOFI_URL_HERE]"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Support via Ko-fi">
-          Ko-fi →
-        </a>
+      <!-- Right: QR code — upload Scalar Donation.png to repo root -->
+      <div class="donation-qr">
+        <img
+          src="Scalar Donation.png"
+          alt="Monero donation QR code"
+          width="160"
+          height="160"
+        />
+        <p class="donation-qr-label">Scan to send XMR</p>
       </div>
 
     </div>
 
+    <div class="donation-notice">
+      Bitcoin and fiat options are not listed. Monero's default privacy
+      is consistent with what Scalar is being built to provide.
+      Supporting this project with a private transaction is the most
+      coherent statement of intent.
+    </div>
+  </div>
+
+</div>
     <!-- Usage Transparency -->
     <div class="usage-section">
       <h3>Where Funds Go</h3>
