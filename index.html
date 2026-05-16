@@ -363,84 +363,396 @@
 ══════════════════════════════════════════ -->
 <section id="roadmap" class="section">
   <div class="container">
-    <p class="section-label">The Path Forward</p>
-    <h2 class="section-title">Phases, Not Dates.</h2>
+    <p class="section-label">The Full Journey</p>
+    <h2 class="section-title">How It Got Here.</h2>
     <p class="section-subtitle">
-      It ships when it's right. Not when a calendar says so.
+      From a first-principles idea to an audited specification in under
+      60 days. Every version existed because the previous one had a flaw
+      worth fixing.
     </p>
 
     <p class="roadmap-note">
-      No calendar dates are published. A solo developer who commits to
-      deadlines is making promises that compromise quality.
+      Version numbers reflect specification revisions, not software
+      releases. Each one represents a deliberate decision to get
+      something right before moving forward.
     </p>
 
+    <!-- ── PART 1: THE JOURNEY SO FAR ── -->
+    <div class="roadmap-part-label">Part I — Specification Journey</div>
     <div class="roadmap-phases" role="list">
 
       <div class="phase complete" role="listitem">
         <div class="phase-dot" aria-label="Complete">✓</div>
         <div class="phase-body">
-          <div class="phase-status">Phase 1 — Complete</div>
-          <h3>Core Protocol</h3>
+          <div class="phase-status">Origin — 12 April 2026</div>
+          <h3>The Idea: First Principles</h3>
           <p>
-            The cryptographic foundation: zero-knowledge proof system,
-            transaction structure, consensus mechanism, and fixed supply
-            schedule. Designed, implemented, and validated against the
-            core security properties Scalar requires.
+            Not a feature request. Not an improvement on an existing chain.
+            The starting point was a question asked from scratch: what would
+            a monetary network look like if you refused to inherit the
+            fundamental assumptions that make every current network weak?
+            The answer required building something 180 degrees different
+            from the majority of existing decentralised projects.
           </p>
+          <div class="phase-change">
+            <span class="phase-change-label">Original name</span>
+            Swarm Kinetic Network
+          </div>
         </div>
       </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">V1 — 14 April 2026</div>
+          <h3>The Monetary Foundation</h3>
+          <p>
+            The first version established the core monetary model. The
+            challenge was designing a supply schedule that allowed large
+            participants to accumulate value without monopolising the
+            network against ordinary users. The answer was a
+            psychologically calibrated supply ceiling and a decade-long
+            maturation window to ensure early stability rather than early
+            speculation.
+          </p>
+          <div class="phase-change">
+            <span class="phase-change-label">Discarded</span>
+            Standard decentralisation-only framing. Replaced with a
+            high-grade deflationary instrument with structural monopoly
+            resistance.
+          </div>
+          <div class="phase-code">
+            <span class="phase-code-label">Code</span>
+            Architecture design phase — balancing network capacity and
+            participant space.
+          </div>
+        </div>
+      </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">V2 — 19 April 2026</div>
+          <h3>The Liquidity Problem</h3>
+          <p>
+            A serious flaw emerged: if transaction fees were burned, rational
+            participants would stop transacting and simply hold. A network
+            where no one transacts is a dead network. The solution was a
+            two-phase monetary evolution — an initial passive deflation
+            phase followed by a permanent fixed supply phase — keeping
+            the network alive by volume rather than by burning.
+          </p>
+          <div class="phase-change">
+            <span class="phase-change-label">Discarded</span>
+            Fee-burning mechanism entirely. All external third-party
+            verification dependencies removed.
+          </div>
+          <div class="phase-code">
+            <span class="phase-code-label">Code</span>
+            Autonomous network capacity expansion logic and network
+            defence against adversarial actors.
+          </div>
+        </div>
+      </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">V3 — 26 April 2026</div>
+          <h3>No Free Lunch, No Founder Advantage</h3>
+          <p>
+            The initial asset distribution model was unfair. Free airdrops
+            at launch reward speculators, not participants. The decision was
+            made to distribute assets purely based on proven uptime — earned
+            by doing, not by arriving early. At the same time, the maximum
+            supply was locked permanently. And the founder allocation was
+            eliminated entirely.
+          </p>
+          <div class="phase-change">
+            <span class="phase-change-label">Discarded</span>
+            Launch airdrops and all founder token allocations. Both
+            removed without replacement.
+          </div>
+          <div class="phase-code">
+            <span class="phase-code-label">Code</span>
+            Core software split into independent modules: cryptography,
+            networking, and wallet — each isolated from the others.
+          </div>
+        </div>
+      </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">V5 — 1 May 2026</div>
+          <h3>Hardware Should Not Determine Power</h3>
+          <p>
+            The hardware requirements were too high for true
+            decentralisation. But reducing them naively creates a different
+            problem: low-cost attackers. The resolution was elegant — make
+            attacking the network require so much investment that rational
+            attackers have more to lose by attacking than by participating
+            honestly. Power is measured by committed uptime, not by
+            computing power owned.
+          </p>
+          <div class="phase-change">
+            <span class="phase-change-label">Discarded</span>
+            Hardware tier classifications. Speed-of-response as a
+            transaction tiebreaker. Both replaced by time-commitment
+            scoring.
+          </div>
+          <div class="phase-code">
+            <span class="phase-code-label">Code</span>
+            Node architecture, governance structure, and wallet design
+            fully mapped and completed.
+          </div>
+        </div>
+      </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">V6 — 3 May 2026</div>
+          <h3>A Synchronisation Flaw That Could Split the Network</h3>
+          <p>
+            A critical vulnerability was discovered: the method by which
+            nodes synchronised their view of the network contained an
+            internal arithmetic contradiction. Under certain conditions,
+            different nodes could reach different conclusions — not from
+            an attack, but from the design itself. The entire synchronisation
+            method was replaced with one that is locally computed,
+            deterministically bounded, and mutually verifiable without
+            any bias.
+          </p>
+          <div class="phase-change">
+            <span class="phase-change-label">Discarded</span>
+            The entire previous network synchronisation system and all
+            its fractional calculation logic. Removed completely.
+          </div>
+          <div class="phase-code">
+            <span class="phase-code-label">Code</span>
+            Network propagation layer fully rewritten and transitioned
+            to the new synchronisation model.
+          </div>
+        </div>
+      </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">V7 — 4 May 2026</div>
+          <h3>Applications Must Not Touch the Core</h3>
+          <p>
+            Any future application built on top of Scalar — wallets,
+            tools, integrations — could, if carelessly designed, modify
+            or weaken the core protocol layer. The protocol and the
+            application layer were formally and permanently separated.
+            Third-party developers can build on Scalar without ever
+            being able to touch its foundation.
+          </p>
+          <div class="phase-change">
+            <span class="phase-change-label">Discarded</span>
+            Remaining state data from the old synchronisation model
+            permanently purged.
+          </div>
+          <div class="phase-code">
+            <span class="phase-code-label">Code</span>
+            Application layer framework successfully added to the
+            system as a fully isolated layer.
+          </div>
+        </div>
+      </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">V8 — 4 May 2026</div>
+          <h3>Keys Must Resist Industrial Attack</h3>
+          <p>
+            The key derivation system — how access credentials are
+            generated from a passphrase — was vulnerable to brute-force
+            attacks using high-performance hardware at scale. The system
+            was replaced with a method that monopolises memory consumption
+            during derivation, making mass hardware attacks computationally
+            infeasible regardless of how much processing power an attacker
+            deploys.
+          </p>
+          <div class="phase-change">
+            <span class="phase-change-label">Discarded</span>
+            Previous key derivation system, considered obsolete under
+            the updated threat model.
+          </div>
+          <div class="phase-code">
+            <span class="phase-code-label">Code</span>
+            576 system test checkpoints passed with a clean result.
+            Advanced application module development begins.
+          </div>
+        </div>
+      </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">V9 — 7 May 2026</div>
+          <h3>Time Cannot Be the Arbiter</h3>
+          <p>
+            Using wall-clock time to determine network period transitions
+            created an attack surface: an adversary with control over
+            timestamps could manipulate the network's sense of when one
+            period ends and another begins. Period transitions were
+            redesigned around a deterministic sequence number — an event
+            count that cannot be falsified. The historical data storage
+            system was also simplified, and a minimal emergency signal
+            was added for nodes that become temporarily disconnected.
+          </p>
+          <div class="phase-change">
+            <span class="phase-change-label">Discarded</span>
+            Multi-layer data filtering, duplicate ownership in history
+            records, and rigid percentage-based fee distribution.
+          </div>
+          <div class="phase-code">
+            <span class="phase-code-label">Code</span>
+            All utility features and client application layer
+            (phases 1–3) completed.
+          </div>
+        </div>
+      </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">V10 — 10 May 2026</div>
+          <h3>Consolidation: Smaller, Faster, Cleaner</h3>
+          <p>
+            A large consolidation pass. Communication pathways between
+            nodes were over-engineered and inefficient. The digital
+            signature standard in use was consuming more space than
+            necessary. The governance decision process had accumulated
+            unnecessary complexity. Everything was stripped back to the
+            minimum that still satisfies the security requirements —
+            nothing more.
+          </p>
+          <div class="phase-change">
+            <span class="phase-change-label">Discarded</span>
+            Over-complex communication routes, previous signature
+            standard, and convoluted governance rule logic.
+          </div>
+          <div class="phase-code">
+            <span class="phase-code-label">Code</span>
+            Public transparency audit module added. Test suite
+            expanded toward 758 checkpoints.
+          </div>
+        </div>
+      </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">V11.1-FINAL — 13 May 2026</div>
+          <h3>External Audit: Four Findings, All Resolved</h3>
+          <p>
+            An independent cryptographic audit identified four
+            vulnerabilities. First: different nodes could process the same
+            set of transactions in different orders, making consensus
+            results non-deterministic. Second: there was no mechanism to
+            lock in a final agreed state — the network could keep
+            reconsidering settled decisions. Third: low-specification
+            devices had disproportionate governance influence relative to
+            their contribution. All four were resolved. The specification
+            is now the single authoritative document for all further
+            implementation.
+          </p>
+          <div class="phase-change">
+            <span class="phase-change-label">Discarded</span>
+            Unlimited governance rights for the lowest-tier
+            participants. Removed and replaced with capped influence
+            proportional to proven contribution.
+          </div>
+          <div class="phase-code">
+            <span class="phase-code-label">Code</span>
+            All audit recommendations implemented. Synchronisation
+            and transaction finalisation testing in progress.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── PART 2: WHAT COMES NEXT ── -->
+    <div class="roadmap-part-label" style="margin-top: 64px;">Part II — What Comes Next</div>
+    <p class="roadmap-note">
+      No calendar dates. It ships when it is right.
+    </p>
+    <div class="roadmap-phases" role="list">
 
       <div class="phase active" role="listitem">
         <div class="phase-dot" aria-label="Active">→</div>
         <div class="phase-body">
-          <div class="phase-status">Phase 2 — In Progress</div>
-          <h3>Testnet</h3>
+          <div class="phase-status">Current — Hardening</div>
+          <h3>Testing to Destruction</h3>
           <p>
-            Live testnet operation to surface edge cases, validate
-            performance under sustained load, and harden the node
-            software against real-world conditions. This phase
-            continues until the network demonstrates sustained
-            stability without failures.
+            The specification is complete and the local implementation
+            is functional. The current work is hardening: running the
+            system under adversarial conditions, expanding the test suite,
+            validating that every security property holds not just in
+            theory but under real pressure. Nothing ships until this
+            phase produces no surprises.
           </p>
         </div>
       </div>
 
       <div class="phase next" role="listitem">
-        <div class="phase-dot" aria-label="Next">3</div>
+        <div class="phase-dot" aria-label="Next">↓</div>
         <div class="phase-body">
-          <div class="phase-status">Phase 3 — Next</div>
-          <h3>Genesis Nodes</h3>
+          <div class="phase-status">Next — Public Testnet</div>
+          <h3>Open to Independent Verification</h3>
           <p>
-            Definition and deployment of the initial node specification.
-            Establishing the parameters for independent participants
-            to operate infrastructure. No centralized node operator.
+            When the implementation is stable enough to withstand
+            external scrutiny, a public testnet will be deployed.
+            This is when live network metrics will appear on this page
+            for the first time — because that will be the first time
+            honest numbers exist.
           </p>
         </div>
       </div>
 
       <div class="phase planned" role="listitem">
-        <div class="phase-dot" aria-label="Planned">4</div>
+        <div class="phase-dot" aria-label="Planned">↓</div>
         <div class="phase-body">
-          <div class="phase-status">Phase 4 — Planned</div>
-          <h3>Applications</h3>
+          <div class="phase-status">Planned — Genesis Nodes</div>
+          <h3>Independent Infrastructure</h3>
           <p>
-            Wallet software and basic tooling that allows real users to
-            interact with the network. Built with the same privacy-first
-            principles as the protocol itself.
+            Establishing the parameters for independent participants to
+            operate network nodes. No central operator. No
+            foundation-controlled majority. The network exists when
+            others run it, not before.
+          </p>
+        </div>
+      </div>
+
+      <div class="phase planned" role="listitem">
+        <div class="phase-dot" aria-label="Planned">↓</div>
+        <div class="phase-body">
+          <div class="phase-status">Planned — Applications</div>
+          <h3>Wallet and Tooling</h3>
+          <p>
+            User-facing software built on the isolated application layer —
+            the one that cannot touch the core protocol by design.
+            Privacy-first from the interface down.
           </p>
         </div>
       </div>
 
       <div class="phase target" role="listitem">
-        <div class="phase-dot" aria-label="Target">5</div>
+        <div class="phase-dot" aria-label="Target">◎</div>
         <div class="phase-body">
-          <div class="phase-status">Phase 5 — Target</div>
-          <h3>Mainnet</h3>
+          <div class="phase-status">Target — Mainnet</div>
+          <h3>When It Is Ready</h3>
           <p>
             Public launch when all prior phases pass their exit criteria.
-            No launch date is set. No launch date will be set until
-            Phase 4 is complete and the network has demonstrated it is
-            ready.
+            No date is set. No date will be set until the network has
+            proven it can withstand what the real world will do to it.
+            A premature launch is not a launch — it is a liability.
           </p>
         </div>
       </div>
@@ -607,14 +919,15 @@
           </div>
         </div>
         <div class="faq-answer">
-          The live stats above are drawn from an active testnet — not
-          simulated numbers. The screenshots show real terminal output
-          from a running system. Vaporware does not produce 148,000+
-          blocks or verify millions of proofs. There is no marketing
-          budget here, no venture backing to fake momentum, and no token
-          sale to fabricate interest for. The evidence is here. If it is
-          not convincing to you, do not contribute — that is the
-          appropriate response.
+          The specification journey above is real and documented with
+          dates. Ten versions in under 60 days, each one fixing a
+          specific flaw in the previous. An independent audit was
+          conducted. The implementation runs in a local development
+          environment. There is no live network yet — and this page
+          says so plainly, because honesty at this stage costs nothing
+          and deception costs everything. If the evidence here is not
+          sufficient for you, do not contribute. That is the correct
+          response.
         </div>
       </div>
 
