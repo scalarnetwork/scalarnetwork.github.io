@@ -29,7 +29,7 @@ devLog: [
     {
       date: 'MAY 2026',
       title: 'Supply Bound — Verified in Implementation',
-      body: 'The 21,000,000 coins ceiling is enforced inside the protocol itself — not by a configuration parameter or an administrative setting. The constraint has been verified in the local implementation. It cannot be overridden by any party, including the developer.'
+      body: 'The supply ceiling is enforced inside the protocol itself, not by a configuration parameter or an administrative setting. The constraint has been verified in the local implementation. It cannot be overridden by any party, including the developer.'
     },
     {
       date: 'MAY 2026',
