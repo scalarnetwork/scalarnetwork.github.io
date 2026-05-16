@@ -108,10 +108,6 @@
           <span class="t-key">not yet deployed</span>
         </div>
         <div>
-          <span class="t-key">Tests passing:   </span>
-          <span class="t-val">487</span>
-        </div>
-        <div>
           <span class="t-key">Supply cap:      </span>
           <span class="t-val">21,000,000 coins</span>
         </div>
@@ -523,7 +519,7 @@
           <p>
             The initial asset distribution model was unfair. Free airdrops
             at launch reward speculators, not participants. The decision was
-            made to distribute assets purely based on proven uptime — earned
+            made to distribute assets purely based on demonstrated participation — earned
             by doing, not by arriving early. At the same time, the maximum
             supply was locked permanently. And the founder allocation was
             eliminated entirely.
@@ -659,9 +655,9 @@
             Using wall-clock time to determine network period transitions
             created an attack surface: an adversary with control over
             timestamps could manipulate the network's sense of when one
-            period ends and another begins. Period transitions were
-            redesigned around a deterministic verifiable internal counter — an event
-            count that cannot be falsified. The historical data storage
+            period ends and another begins. Period transitions were redesigned 
+            around an internally verifiable reference that cannot be manipulated 
+            by any external party. The historical data storage
             system was also simplified, and a minimal emergency signal
             was added for nodes that become temporarily disconnected.
           </p>
@@ -685,9 +681,9 @@
           <h3>Consolidation: Smaller, Faster, Cleaner</h3>
           <p>
             A large consolidation pass. Communication pathways between
-            nodes were over-engineered and inefficient. The digital
-            signature standard in use was consuming more space than
-            necessary. The governance decision process had accumulated
+            nodes were over-engineered and inefficient. The authentication 
+            method in use was consuming more space than the security 
+            requirements justified. The governance decision process had accumulated
             unnecessary complexity. Everything was stripped back to the
             minimum that still satisfies the security requirements —
             nothing more.
@@ -711,17 +707,12 @@
           <div class="phase-status">V11.1-FINAL — 13 May 2026</div>
           <h3>External Audit: Four Findings, All Resolved</h3>
           <p>
-            An independent cryptographic audit identified four
-            vulnerabilities. First: different nodes could process the same
-            set of transactions in different orders, making consensus
-            results non-deterministic. Second: there was no mechanism to
-            lock in a final agreed state — the network could keep
-            reconsidering settled decisions. Third: low-specification
-            devices had disproportionate governance influence relative to
-            their contribution. Three were resolved and integrated. The fourth requires 
-            testnet conditions to evaluate and remains open. 
-            The specification is now the single authoritative document for all further
-            implementation.
+            An independent cryptographic audit identified four vulnerabilities 
+            in the specification. Three were identified, reproduced, and closed 
+            at the implementation level before this version was finalised. 
+            The fourth requires live network conditions to evaluate and remains 
+            open pending public testnet deployment. The specification is now the 
+            single authoritative document for all further implementation.
           </p>
           <div class="phase-change">
             <span class="phase-change-label">Discarded</span>
@@ -1058,9 +1049,8 @@
         </div>
         <div class="faq-answer">
           When it is ready. No date is set, no date is implied. The
-          roadmap shows phases, not timelines. Testnet is currently
-          active and Phase 2 has no defined exit date — it exits when
-          the network has demonstrated the stability properties required.
+          roadmap shows phases, not timelines. The roadmap shows phases, 
+          not timelines. Each phase exits when it meets its criteria, not when a date arrives.
           Anyone telling you a launch date for Scalar is guessing or
           making it up. The only honest answer is: when the work
           is done.
