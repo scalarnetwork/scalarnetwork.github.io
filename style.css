@@ -1440,3 +1440,67 @@ footer {
   .donation-qr img { width: 140px; height: 140px; }
   .donation-grid--single { max-width: 100%; }
 }
+
+/* ─── PRINCIPLES QUOTES ─── */
+.principles-quotes {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.principles-quotes-header {
+  padding: 14px 28px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-secondary);
+}
+.principles-quotes-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+.principles-quotes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+.pquote {
+  padding: 28px 32px;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  transition: background var(--transition);
+}
+.pquote:nth-child(2n) { border-right: none; }
+.pquote:nth-child(3),
+.pquote:nth-child(4)  { border-bottom: none; }
+.pquote:hover { background: rgba(255,255,255,0.02); }
+.pquote-mark {
+  font-family: var(--font-head);
+  font-size: 32px;
+  line-height: 1;
+  color: var(--accent-teal);
+  opacity: 0.4;
+  flex-shrink: 0;
+  margin-top: -4px;
+}
+.pquote:nth-child(2) .pquote-mark { color: var(--accent-blue); }
+.pquote:nth-child(3) .pquote-mark { color: var(--accent-amber); }
+.pquote:nth-child(4) .pquote-mark { color: var(--accent-green); }
+.pquote p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  font-style: italic;
+}
+
+@media (max-width: 680px) {
+  .principles-quotes-grid { grid-template-columns: 1fr; }
+  .pquote { border-right: none; }
+  .pquote:last-child { border-bottom: none; }
+  .pquote:nth-child(3) { border-bottom: 1px solid var(--border); }
+}
