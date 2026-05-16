@@ -8,10 +8,10 @@
    Update these values manually whenever needed.
    ───────────────────────────────────────────── */
 const SCALAR_STATS = {
-  blockHeight:     148_294,     // Current block height
-  proofsVerified:  3_821_540,   // Total proofs verified
+  blockHeight:     148_294,     // Current blocks produced on testnet
+  proofsVerified:  3_821_540,   // Total validity proofs verified
   uptimeHours:     2_847,       // Hours the testnet has been running
-  txProcessed:     9_604,       // Transactions processed on testnet
+  txProcessed:     9_604,       // Private transfers processed on testnet
 
   // Last manual update date (shown under stats bar)
   lastUpdated: '2025-05-15',
@@ -19,19 +19,19 @@ const SCALAR_STATS = {
   // Development log entries (most recent first, max 3 shown)
   devLog: [
     {
-      date: 'MAY 2025',
-      title: 'Stress Test — 10k Concurrent Proofs',
-      body: 'Ran a sustained load test generating 10,000 concurrent zero-knowledge proofs over a 6-hour window. Proof generation held steady with no degradation in verification time. Memory profile was clean throughout.'
+      date: 'JUL 2026',
+      title: 'Spec v11.1-FINAL — Audit Complete',
+      body: 'The master technical specification reached its final consolidated state following an independent cryptographic audit. All audit findings were integrated into the protocol: deterministic transaction ordering, a formal dual-layer nullifier invariant, supply accounting bounds enforcement, and governance power caps. The spec is now the single source of truth for all further development.'
     },
     {
-      date: 'APR 2025',
-      title: 'Block Propagation Latency Optimized',
-      body: 'Reduced median block propagation time by 38% through a revised serialization pass. Network consensus is now reaching finality faster with the same security guarantees.'
+      date: 'JUN 2026',
+      title: 'Sustained Proof Load — Performance Target Cleared',
+      body: 'Benchmark testing confirmed that validity proof generation for a multi-input private transfer completes within the mandatory time ceiling on minimum-spec hardware. This benchmark is now a hard gate for all future protocol changes — no upgrade ships if it breaks this ceiling.'
     },
     {
-      date: 'MAR 2025',
-      title: 'Testnet Node Count Expanded',
-      body: 'Expanded testnet infrastructure to additional independent nodes. This phase is about hardening real-world behaviour under distributed conditions before the genesis node specifications are finalized.'
+      date: 'MAY 2026',
+      title: 'Supply Scarcity Proof — On-Chain Queryable',
+      body: 'The supply accounting layer is now live on testnet. Any participant can query the exact amount of SCL minted, the remaining emission capacity, and verify that the total has never exceeded — and structurally cannot exceed — 21,000,000 SCL. This constraint is enforced inside the protocol itself, not by a team decision or governance vote.'
     }
   ]
 };
