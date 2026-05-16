@@ -1380,7 +1380,7 @@ footer {
 /* ─── DONATION: MONERO SINGLE CARD ─── */
 .donation-grid--single {
   grid-template-columns: 1fr;
-  max-width: 720px;
+  max-width: 100%;
 }
 .donation-card--featured {
   border-color: rgba(0,212,170,0.2);
@@ -1429,6 +1429,4 @@ footer {
   .donation-qr img { width: 140px; height: 140px; }
   .donation-grid--single { max-width: 100%; }
 }
-.donation-grid--single {
-  max-width: 100%;
-}
+
