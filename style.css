@@ -1377,3 +1377,55 @@ footer {
   display: block;
   margin-bottom: 4px;
 }
+/* ─── DONATION: MONERO SINGLE CARD ─── */
+.donation-grid--single {
+  grid-template-columns: 1fr;
+  max-width: 720px;
+}
+.donation-card--featured {
+  border-color: rgba(0,212,170,0.2);
+}
+.donation-card--featured:hover {
+  border-color: rgba(0,212,170,0.4);
+}
+.donation-card-inner {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+.donation-info { flex: 1; min-width: 0; }
+.donation-qr {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.donation-qr img {
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 6px;
+}
+.donation-qr-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-secondary);
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+.donation-notice {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-style: italic;
+}
+@media (max-width: 600px) {
+  .donation-card-inner { flex-direction: column-reverse; gap: 24px; }
+  .donation-qr img { width: 140px; height: 140px; }
+  .donation-grid--single { max-width: 100%; }
+}
