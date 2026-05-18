@@ -267,14 +267,21 @@
           <div class="status-panel-indicator complete" aria-label="Complete"></div>
           <div class="status-panel-text">
             <div class="status-panel-label">Protocol Specification</div>
-            <div class="status-panel-value">v11.1-FINAL — Audited &amp; Consolidated</div>
+            <div class="status-panel-value">Consolidated — single source of truth, no version</div>
+          </div>
+        </div>
+        <div class="status-panel-item">
+          <div class="status-panel-indicator complete" aria-label="Complete"></div>
+          <div class="status-panel-text">
+            <div class="status-panel-label">Code Alignment</div>
+            <div class="status-panel-value">Complete — 9 discrepancies corrected</div>
           </div>
         </div>
         <div class="status-panel-item">
           <div class="status-panel-indicator complete" aria-label="Complete"></div>
           <div class="status-panel-text">
             <div class="status-panel-label">Core Implementation</div>
-            <div class="status-panel-value">Functional — test suite passing</div>
+            <div class="status-panel-value">Functional — 1,400+ unit tests passing</div>
           </div>
         </div>
         <div class="status-panel-item">
@@ -693,6 +700,58 @@
             <span class="phase-code-label">Code</span>
             Public transparency audit module added. Test suite
             expanded toward 758 checkpoints.
+          </div>
+        </div>
+      </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">18 May 2026</div>
+          <h3>Code Aligned to Specification</h3>
+          <p>
+            A full audit of the repository against the consolidated
+            specification identified nine points where the implementation
+            had drifted from the document. All nine were corrected.
+            Two annotation errors in the specification were also found
+            and fixed. Every constant that the protocol treats as
+            permanent now lives in a single authoritative location —
+            no module may define its own copy. All 1,400+ unit tests
+            pass against the aligned codebase.
+          </p>
+          <div class="phase-code">
+            <span class="phase-code-label">Result</span>
+            9 code discrepancies corrected. 2 specification annotations
+            fixed. 1,400+ unit tests passing. Single authoritative
+            constant source established across all modules.
+          </div>
+        </div>
+      </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">17 May 2026</div>
+          <h3>Specification Consolidated — One Document, No Version</h3>
+          <p>
+            The specification document was stripped of version numbers,
+            release labels, historical change notes, and any language
+            implying a previously active network or existing users.
+            A procedure was established: audit findings are absorbed
+            into the document text rather than appended as amendments,
+            and the implementation follows the document — not the reverse.
+            What remains is one clean document that serves as the genesis
+            reference for the first implementation of Scalar.
+          </p>
+          <div class="phase-change">
+            <span class="phase-change-label">Discarded</span>
+            Version numbers, release labels, historical changelogs,
+            and all language implying prior network activity.
+          </div>
+          <div class="phase-code">
+            <span class="phase-code-label">Established</span>
+            Single specification document with no version. Findings
+            absorbed into text. Code follows document — always.
           </div>
         </div>
       </div>
