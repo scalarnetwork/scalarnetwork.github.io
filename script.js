@@ -17,6 +17,16 @@ const SCALAR_STATS = {
   // OWNER: Update as milestones are genuinely reached.
 devLog: [
     {
+      date: '18 MAY 2026',
+      title: 'Code Alignment — 9 Discrepancies Corrected',
+      body: 'A full repository audit identified nine points where the implementation had drifted from the final specification. Each was corrected. Two annotation errors in the specification itself were also identified and fixed. All 1,400+ unit tests now pass against the aligned codebase. Every cryptographic constant now lives in a single authoritative location — all modules import from there.'
+    },
+    {
+      date: '17 MAY 2026',
+      title: 'Specification Consolidated — Single Source of Truth',
+      body: 'The specification document was stripped of version numbers, release labels, historical change notes, and any language implying a previously active network. What remains is one document with no version, no changelog, and no transitional framing. It is the genesis reference — the single source of truth for the first implementation of Scalar.'
+    },
+    {
       date: 'MAY 2026',
       title: 'Wallet Earnings Flow — Complete',
       body: 'Network participation now produces a spendable wallet balance. A node that stays online accumulates coins over time — no mining hardware, no staking requirement. The earnings flow from participation to spendable balance is implemented and functional.'
@@ -30,16 +40,6 @@ devLog: [
       date: 'MAY 2026',
       title: 'Supply Bound — Verified in Implementation',
       body: 'The supply ceiling is enforced inside the protocol itself, not by a configuration parameter or an administrative setting. The constraint has been verified in the local implementation. It cannot be overridden by any party, including the developer.'
-    },
-    {
-      date: 'MAY 2026',
-      title: 'Performance Benchmark — Mandatory Ceiling Cleared',
-      body: 'Processing a complete private transfer meets the mandatory performance ceiling on minimum-spec hardware. This benchmark is a hard gate — no future protocol change ships if it cannot clear this threshold.'
-    },
-    {
-      date: 'MAY 2026',
-      title: 'Specification Finalised — v11.1-FINAL',
-      body: 'The master protocol specification reached its final consolidated state following an independent cryptographic audit. It is now the single authoritative reference for all further implementation work. Version numbering is frozen.'
     }
   ]
 };
