@@ -17,6 +17,11 @@ const SCALAR_STATS = {
   // OWNER: Update as milestones are genuinely reached.
 devLog: [
     {
+      date: '20 MAY 2026',
+      title: 'Optimisation Blueprint — Efficiency, Finality, and Throughput',
+      body: 'A comprehensive set of improvements targeting the network’s three primary performance dimensions has been formalised. Transaction data efficiency can be increased severalfold, finality latency reduced by orders of magnitude, and total network throughput lifted by a factor of dozens — all without altering the protocol’s foundational constraints. Several supporting components are now entering a dedicated security‑research phase before integration approval.'
+    },
+    {
       date: '18 MAY 2026',
       title: 'Code Alignment — 9 Discrepancies Corrected',
       body: 'A full repository audit identified nine points where the implementation had drifted from the final specification. Each was corrected. Two annotation errors in the specification itself were also identified and fixed. All 1,400+ unit tests now pass against the aligned codebase. Every cryptographic constant now lives in a single authoritative location — all modules import from there.'
