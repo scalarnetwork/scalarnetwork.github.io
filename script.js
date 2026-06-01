@@ -45,11 +45,6 @@ devLog: [
       date: 'MAY 2026',
       title: 'Security Audit — 3 of 4 Findings Resolved',
       body: 'Three protocol-level issues identified by the security audit have been closed at the implementation level. The fourth finding requires testnet simulation to reproduce under real network conditions and remains open pending public testnet deployment.'
-    },
-    {
-      date: 'MAY 2026',
-      title: 'Supply Bound — Verified in Implementation',
-      body: 'The supply ceiling is enforced inside the protocol itself, not by a configuration parameter or an administrative setting. The constraint has been verified in the local implementation. It cannot be overridden by any party, including the developer.'
     }
   ]
 };
