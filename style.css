@@ -169,9 +169,9 @@ ul { list-style: none; }
   gap: 7px;
   font-family: var(--font-mono);
   font-size: 11px;
-  color: var(--accent-amber);
-  background: rgba(240,165,0,0.08);
-  border: 1px solid rgba(240,165,0,0.2);
+  color: var(--accent-blue);
+  background: rgba(0,136,255,0.08);
+  border: 1px solid rgba(0,136,255,0.2);
   border-radius: 20px;
   padding: 4px 10px;
 }
@@ -179,7 +179,7 @@ ul { list-style: none; }
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--accent-amber);
+  background: var(--accent-blue);
   animation: pulse-dot 2s ease-in-out infinite;
   flex-shrink: 0;
 }
@@ -1503,4 +1503,43 @@ footer {
   .pquote { border-right: none; }
   .pquote:last-child { border-bottom: none; }
   .pquote:nth-child(3) { border-bottom: 1px solid var(--border); }
+}
+
+/* ─── MILESTONE BANNER (Hero) ─── */
+.milestone-banner {
+  background: rgba(0,136,255,0.05);
+  border: 1px solid rgba(0,136,255,0.18);
+  border-left: 3px solid var(--accent-blue);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+.milestone-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-blue);
+  flex-shrink: 0;
+  margin-top: 5px;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+.milestone-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-blue);
+  margin-bottom: 5px;
+}
+.milestone-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+.milestone-desc strong {
+  color: var(--text-primary);
+  font-weight: 500;
 }
