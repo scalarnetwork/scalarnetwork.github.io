@@ -33,7 +33,7 @@
 
     <div class="nav-status" aria-label="Network status">
       <span class="status-dot" aria-hidden="true"></span>
-      <span>IN DEVELOPMENT</span>
+      <span>NETWORK TESTING</span>
     </div>
 
     <div class="nav-links" role="list">
@@ -60,7 +60,7 @@
 ══════════════════════════════════════════ -->
 <section id="hero" class="section">
   <div class="container">
-    <p class="hero-eyebrow">Private Monetary Infrastructure / Testnet Phase</p>
+    <p class="hero-eyebrow">Private Monetary Infrastructure / Network Testing Phase</p>
     <h1 class="hero-headline">
       Building the Financial Privacy<br />
       the World Was <span class="hl">Promised.</span>
@@ -69,6 +69,20 @@
       A trustless, private monetary network. Built by one developer.
       No venture capital. No compromise.
     </p>
+    <!-- Network milestone banner -->
+    <div class="milestone-banner">
+      <div class="milestone-dot"></div>
+      <div>
+        <div class="milestone-label">Network Milestone — 3 June 2026</div>
+        <p class="milestone-desc">
+          <strong>7-node external network active across separate machines.</strong>
+          First cross-machine P2P connection established. 5/7 quorum verified.
+          Second independent implementation confirmed identical output on all 7 test vectors.
+          Scalar has moved from local development to verified multi-machine network operation.
+        </p>
+      </div>
+    </div>
+
     <div class="hero-cta">
       <!-- OWNER: Replace [X_PROFILE_URL_HERE] with your X profile URL -->
       <a class="btn btn-primary" href="https://x.com/scalar_network" target="_blank" rel="noopener noreferrer">
@@ -83,7 +97,7 @@
         <div class="terminal-dots" aria-hidden="true">
           <span></span><span></span><span></span>
         </div>
-        <span class="terminal-title">scalar-node — dev environment</span>
+        <span class="terminal-title">scalar-node — external test network</span>
       </div>
       <div class="terminal-body">
         <div>
@@ -97,15 +111,20 @@
         </div>
         <div>
           <span class="t-key">Environment:     </span>
-          <span class="t-label">local dev</span>
+          <span class="t-label">external test network</span>
         </div>
         <div>
-          <span class="t-key">Spec status:     </span>
-          <span class="t-active">COMPLETE</span>
+          <span class="t-key">Network nodes:   </span>
+          <span class="t-val">7</span>
+          <span class="t-key"> (separate machines)</span>
         </div>
         <div>
-          <span class="t-key">Supply cap:      </span>
-          <span class="t-val">fixed enforced in protocol</span>
+          <span class="t-key">Quorum:          </span>
+          <span class="t-active">5/7 — VERIFIED</span>
+        </div>
+        <div>
+          <span class="t-key">P2P:             </span>
+          <span class="t-active">ACTIVE</span>
         </div>
         <div>
           <span class="t-key">Public testnet:  </span>
@@ -306,10 +325,38 @@
           </div>
         </div>
         <div class="status-panel-item">
+          <div class="status-panel-indicator complete" aria-label="Complete"></div>
+          <div class="status-panel-text">
+            <div class="status-panel-label">Second Reference Implementation</div>
+            <div class="status-panel-value">Complete — 7/7 test vectors pass</div>
+          </div>
+        </div>
+        <div class="status-panel-item">
+          <div class="status-panel-indicator complete" aria-label="Complete"></div>
+          <div class="status-panel-text">
+            <div class="status-panel-label">Internal Network Test (7-node)</div>
+            <div class="status-panel-value">Complete — 18/18 determinism checks</div>
+          </div>
+        </div>
+        <div class="status-panel-item">
+          <div class="status-panel-indicator complete" aria-label="Complete"></div>
+          <div class="status-panel-text">
+            <div class="status-panel-label">Cross-Machine P2P</div>
+            <div class="status-panel-value">Active — external network running</div>
+          </div>
+        </div>
+        <div class="status-panel-item">
+          <div class="status-panel-indicator complete" aria-label="Complete"></div>
+          <div class="status-panel-text">
+            <div class="status-panel-label">Network Quorum</div>
+            <div class="status-panel-value">Verified — 5/7, separate machines</div>
+          </div>
+        </div>
+        <div class="status-panel-item">
           <div class="status-panel-indicator active" aria-label="In progress"></div>
           <div class="status-panel-text">
             <div class="status-panel-label">Hardening &amp; Testing</div>
-            <div class="status-panel-value">Active — pre-public testnet</div>
+            <div class="status-panel-value">Active — external network phase</div>
           </div>
         </div>
         <div class="status-panel-item">
@@ -425,9 +472,8 @@
     <p class="section-label">The Full Journey</p>
     <h2 class="section-title">How It Got Here.</h2>
     <p class="section-subtitle">
-      From a first-principles idea to an audited specification in under
-      60 days. Every version existed because the previous one had a flaw
-      worth fixing.
+      From a first-principles idea to a live 7-node distributed network in under
+      60 days. Every step forward required closing something that was not yet right.
     </p>
 
     <p class="roadmap-note">
@@ -832,6 +878,126 @@
         </div>
       </div>
       
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">2 June 2026</div>
+          <h3>Second Reference Implementation — 7/7 Vectors Pass</h3>
+          <p>
+            A second independent implementation of the protocol was completed in a
+            separate programming language, covering all standard test vectors defined
+            in the specification. All seven mandatory vectors produced output identical
+            to the primary implementation. An implementation is now considered compliant
+            only when all vectors yield identical results across both codebases.
+          </p>
+          <div class="phase-code">
+            <span class="phase-code-label">Established</span>
+            Cross-implementation testing protocol with 7 mandatory vectors.
+            Spec updated to record first phase of multi-client requirement as complete.
+          </div>
+        </div>
+      </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">2 June 2026</div>
+          <h3>Internal Network Test — 18 Determinism Checks, All Pass</h3>
+          <p>
+            Network components were tested for the first time as a unified operating
+            system rather than as isolated modules. A seven-process internal network
+            was run on a single machine through controlled failure scenarios. All 18
+            determinism checks passed. Twenty-four timeout boundaries were correctly
+            detected. Recovery from a simulated storage failure was verified. Per-module
+            validation alone is no longer accepted as sufficient.
+          </p>
+          <div class="phase-change">
+            <span class="phase-change-label">Discarded</span>
+            Isolated per-component validation as the sole method of system verification.
+          </div>
+          <div class="phase-code">
+            <span class="phase-code-label">Established</span>
+            Standardised multi-node testing procedure covering timeout detection,
+            failure recovery, and output determinism across nodes.
+          </div>
+        </div>
+      </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">3 June 2026</div>
+          <h3>Cross-Machine P2P — First External Connection</h3>
+          <p>
+            All prior testing was conducted within a single physical machine. This
+            session established the first peer-to-peer connection between nodes running
+            on geographically separate machines across a real public network. Liveness
+            message exchange was verified. Node identity proved stable across restarts
+            in a real network environment. A standardised external node onboarding
+            procedure was established and validated.
+          </p>
+          <div class="phase-change">
+            <span class="phase-change-label">Discarded</span>
+            The assumption that local testing proves real-network communication
+            capability. It does not.
+          </div>
+          <div class="phase-code">
+            <span class="phase-code-label">Established</span>
+            External node onboarding procedure: standardised installation,
+            network configuration, and cross-machine connection verification.
+          </div>
+        </div>
+      </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">3 June 2026</div>
+          <h3>Network Resilience — Three Weaknesses Closed</h3>
+          <p>
+            Initial cross-machine testing revealed three operational weaknesses:
+            node identity did not persist across process restarts, disconnected nodes
+            did not attempt automatic reconnection, and unnecessary message rejections
+            occurred after a connection was restored. Each weakness was isolated,
+            fixed, and validated independently. Node identity is now stable across
+            full process lifecycle. Automatic reconnection restores connectivity
+            in under one minute without manual intervention.
+          </p>
+          <div class="phase-change">
+            <span class="phase-change-label">Discarded</span>
+            Dependence on manual intervention to restore inter-node connections
+            after any disruption.
+          </div>
+          <div class="phase-code">
+            <span class="phase-code-label">Established</span>
+            Persistent node identity across restarts. Automatic reconnection
+            to registered nodes. Correct restart handling at the verification layer.
+          </div>
+        </div>
+      </div>
+
+      <div class="phase complete" role="listitem">
+        <div class="phase-dot" aria-label="Complete">✓</div>
+        <div class="phase-body">
+          <div class="phase-status">3 June 2026</div>
+          <h3>Network Quorum — 5/7 Verified, Separate Machines</h3>
+          <p>
+            The external test network was expanded to seven nodes on separate physical
+            machines. The protocol quorum threshold of 5/7 was reached and verified
+            under live conditions. A planned restart of the primary node caused no
+            disruption to the remaining nodes — liveness messages continued propagating
+            through indirect paths without interruption. This is the first time Scalar
+            has operated as a live distributed network.
+          </p>
+          <div class="phase-code">
+            <span class="phase-code-label">Established</span>
+            7-node test network as baseline configuration. Node restart testing
+            as standard resilience verification. External node operator
+            onboarding documentation completed.
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- ── PART 2: WHAT COMES NEXT ── -->
