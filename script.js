@@ -17,6 +17,31 @@ const SCALAR_STATS = {
   // OWNER: Update as milestones are genuinely reached.
 devLog: [
     {
+      date: '3 JUN 2026',
+      title: 'Network Quorum — 7 Nodes, 5/7 Threshold Verified',
+      body: 'The external test network was expanded to seven nodes running on separate physical machines. The protocol quorum threshold of 5/7 was reached and verified under live conditions. A planned restart of the primary node caused no disruption to the remaining nodes — liveness messages continued propagating through indirect paths without interruption. External node operator onboarding documentation was completed and validated during this expansion.'
+    },
+    {
+      date: '3 JUN 2026',
+      title: 'Network Resilience — Three Operational Weaknesses Resolved',
+      body: 'Initial cross-machine testing revealed three weaknesses: node identity did not persist across process restarts, disconnected nodes did not attempt automatic reconnection, and unnecessary message rejections occurred after a connection was restored. Each was isolated, fixed, and validated independently before network expansion continued. Node identity is now stable across full process lifecycle. Automatic reconnection restores connectivity in under one minute. No unnecessary rejections occur after a node restarts.'
+    },
+    {
+      date: '3 JUN 2026',
+      title: 'Cross-Machine P2P — First External Connection Established',
+      body: 'All prior testing was conducted on a single physical machine. This session established the first peer-to-peer connection between nodes running on geographically separate machines across a real public network. Liveness message exchange was verified. Node identity proved stable across restarts in a real network environment. A standardised external node onboarding procedure — covering installation, network configuration, and connection verification — was established during this session.'
+    },
+    {
+      date: '2 JUN 2026',
+      title: 'Internal Network Test — 7 Nodes, 18 Determinism Checks Pass',
+      body: 'Network components were tested for the first time as a unified operating system rather than as isolated modules. A seven-process internal network was run on a single machine, progressing through controlled failure scenarios. All 18 determinism checks passed — every node produced identical output given identical input. Twenty-four timeout boundaries were correctly detected. Recovery from a simulated storage failure was verified. A standardised multi-node testing procedure covering timeouts, failure recovery, and output determinism was established as permanent practice.'
+    },
+    {
+      date: '2 JUN 2026',
+      title: 'Second Reference Implementation — 7/7 Test Vectors Pass',
+      body: 'A second independent implementation of the protocol was completed in a separate programming language, covering all standard test vectors defined in the specification. All seven mandatory test vectors produced output identical to the primary implementation. A cross-implementation testing protocol was established: an implementation is considered compliant only when all test vectors yield identical results across both codebases. The specification was updated to record the completion of this first phase of the multi-client requirement.'
+    },
+    {
       date: '1 JUNE 2026',
       title: 'Integrity Edition — Closing the Gap Between Claim and Code',
       body: 'A multi-specialist audit uncovered critical vulnerabilities, internal contradictions against the specification’s own declared principles, and symbols left silently undefined. Thirteen specialist reports were processed to written, justified decisions before a single line was touched. Code and specification corrections were applied sequentially and cross-referenced. Discarded: constructions violating the protocol’s own prohibitions, a security parameter breakable in seconds with commodity hardware, undefined symbols in distribution formulas, procedures without edge-case handling, circular dependencies in operational sequencing, and the assumption that environment changes automatically propagate. Established: thirteen justified technical decisions, formal definitions for every distribution formula symbol, deterministic emergency governance eligibility that excludes the causing actor, a circularity-free operational sequence, a zero-byte security hardening, and a multi-account synchronisation procedure as permanent standard. The specification no longer contradicts itself. Every principle is consistently enforced across every layer. The reward mechanism is formally defined and deterministically verifiable. Scalar has moved from appearing internally consistent to being proven consistent across all audited components.'
