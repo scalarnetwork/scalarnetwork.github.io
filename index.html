@@ -69,20 +69,6 @@
       A trustless, private monetary network. Built by one developer.
       No venture capital. No compromise.
     </p>
-    <!-- Network milestone banner -->
-    <div class="milestone-banner">
-      <div class="milestone-dot"></div>
-      <div>
-        <div class="milestone-label">Network Milestone — 3 June 2026</div>
-        <p class="milestone-desc">
-          <strong>7-node external network active across separate machines.</strong>
-          First cross-machine P2P connection established. 5/7 quorum verified.
-          Second independent implementation confirmed identical output on all 7 test vectors.
-          Scalar has moved from local development to verified multi-machine network operation.
-        </p>
-      </div>
-    </div>
-
     <div class="hero-cta">
       <!-- OWNER: Replace [X_PROFILE_URL_HERE] with your X profile URL -->
       <a class="btn btn-primary" href="https://x.com/scalar_network" target="_blank" rel="noopener noreferrer">
@@ -107,7 +93,7 @@
         <div>&nbsp;</div>
         <div>
           <span class="t-key">Protocol:        </span>
-          <span class="t-val">v11.1-FINAL</span>
+          <span class="t-val">SCALAR-PROTOCOL</span>
         </div>
         <div>
           <span class="t-key">Environment:     </span>
@@ -116,7 +102,7 @@
         <div>
           <span class="t-key">Network nodes:   </span>
           <span class="t-val">7</span>
-          <span class="t-key"> (separate machines)</span>
+          <span class="t-key"> (2 VPS, 5 Codespace)</span>
         </div>
         <div>
           <span class="t-key">Quorum:          </span>
@@ -134,6 +120,21 @@
         <div><span class="t-prompt">$</span><span class="t-cursor"></span></div>
       </div>
     </div>
+
+    <!-- Network milestone banner — below terminal -->
+    <div class="milestone-banner">
+      <div class="milestone-dot"></div>
+      <div>
+        <div class="milestone-label">Network Milestone — 3 June 2026</div>
+        <p class="milestone-desc">
+          <strong>7-node external network active.</strong>
+          2 VPS nodes and 5 GitHub Codespace nodes connected across real infrastructure.
+          First cross-machine P2P established. 5/7 quorum verified.
+          Scalar has moved from local development to verified distributed network operation.
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -327,13 +328,6 @@
         <div class="status-panel-item">
           <div class="status-panel-indicator complete" aria-label="Complete"></div>
           <div class="status-panel-text">
-            <div class="status-panel-label">Second Reference Implementation</div>
-            <div class="status-panel-value">Complete — 7/7 test vectors pass</div>
-          </div>
-        </div>
-        <div class="status-panel-item">
-          <div class="status-panel-indicator complete" aria-label="Complete"></div>
-          <div class="status-panel-text">
             <div class="status-panel-label">Internal Network Test (7-node)</div>
             <div class="status-panel-value">Complete — 18/18 determinism checks</div>
           </div>
@@ -342,14 +336,14 @@
           <div class="status-panel-indicator complete" aria-label="Complete"></div>
           <div class="status-panel-text">
             <div class="status-panel-label">Cross-Machine P2P</div>
-            <div class="status-panel-value">Active — external network running</div>
+            <div class="status-panel-value">Active — 2 VPS + 5 Codespace nodes</div>
           </div>
         </div>
         <div class="status-panel-item">
           <div class="status-panel-indicator complete" aria-label="Complete"></div>
           <div class="status-panel-text">
             <div class="status-panel-label">Network Quorum</div>
-            <div class="status-panel-value">Verified — 5/7, separate machines</div>
+            <div class="status-panel-value">Verified — 5/7 (2 VPS, 5 Codespace)</div>
           </div>
         </div>
         <div class="status-panel-item">
@@ -882,26 +876,6 @@
         <div class="phase-dot" aria-label="Complete">✓</div>
         <div class="phase-body">
           <div class="phase-status">2 June 2026</div>
-          <h3>Second Reference Implementation — 7/7 Vectors Pass</h3>
-          <p>
-            A second independent implementation of the protocol was completed in a
-            separate programming language, covering all standard test vectors defined
-            in the specification. All seven mandatory vectors produced output identical
-            to the primary implementation. An implementation is now considered compliant
-            only when all vectors yield identical results across both codebases.
-          </p>
-          <div class="phase-code">
-            <span class="phase-code-label">Established</span>
-            Cross-implementation testing protocol with 7 mandatory vectors.
-            Spec updated to record first phase of multi-client requirement as complete.
-          </div>
-        </div>
-      </div>
-
-      <div class="phase complete" role="listitem">
-        <div class="phase-dot" aria-label="Complete">✓</div>
-        <div class="phase-body">
-          <div class="phase-status">2 June 2026</div>
           <h3>Internal Network Test — 18 Determinism Checks, All Pass</h3>
           <p>
             Network components were tested for the first time as a unified operating
@@ -931,7 +905,7 @@
           <p>
             All prior testing was conducted within a single physical machine. This
             session established the first peer-to-peer connection between nodes running
-            on geographically separate machines across a real public network. Liveness
+            across real infrastructure — 2 VPS nodes and 5 GitHub Codespace nodes. Liveness
             message exchange was verified. Node identity proved stable across restarts
             in a real network environment. A standardised external node onboarding
             procedure was established and validated.
